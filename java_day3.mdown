@@ -71,6 +71,63 @@ class Solution{
 ```
 A new `.class` file will be created for each of the classes in this code.
 
+##### Constructors
+In the previous example we had to explicitly set each of the values of the class variables manually by accessing the setter methods. This is never done in a professional environment. What if you forget to set the fields? Professionally something called as the constructor is used. Think of it as a set of instructions or codes that are executed when a new object of that class is created.
+A constructor:
+* ...initializes an object when it is created.
+* ...has the same name as the class
+* ...has a similar syntax to a method BUT - they have no return type.
+* ...is present and is executed whether or not you explicitly define one. If you don't define a constructor, Java will provide a default constructor that initializes values to their defaults.
+
+```Java
+// A simple constructor
+class MyClass{
+    int x;
+
+    // Constructor
+    MyClass(){
+        x = 10;
+    }
+}
+class consDemo{
+    public static void main(String[] args){
+        MyClass example1 = new MyClass(); // when Java encounters the word 'new', the compiler is called.
+        System.out.println("Value: "+example1.x);
+    }
+}
+```
+What if you wanted to assign a specific value to the variable x?
+Simple:
+
+```java
+// After creating the object, change its value;
+MyClass example1 = new MyClass();
+example1.x = 20;
+```
+
+But doing it this way is wasteful. We needlessly assign `10` to the variable x when it is declared. The solution to this problem is a `parametrized constructor`
+
+```java
+class MyClass{
+    int x;
+
+    MyClass(int value){
+        x = value;
+    }
+}
+```
+We can optionally provide a way to set the value of the variable according to the value that we send to the `new` object of the class.
+
+##### The `this` keyword
+When a method is called, it is automatically passed an implicit argument that is a reference to the invoking object. This reference is called `this`
+
+`this` has some important uses. For example, in Java, the parameters that you accept for a parametrized constructors can have the same variable names that the member variables that they represent. So in the above example,, instead of `value` we could have named the variable as `int x` but then the subsequent assignment of the variable to the member variable would have to be `this.x = x;` instead of just `x = value;`
+
+What is the point of this you may ask?
+> There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.
+
+Jokes aside, in large and complex codes, it becomes difficult to come up with new variable names for use as member variable, the constructor parameters and using the main method. At such times, it is cleaner and easier to use the same name for a given variable everywhere it is used. `this` makes `this` useful!
+
 ##### Access specifiers.
 Access specifiers in Java:
 * public
