@@ -1,5 +1,6 @@
 ### Day 3
 * [Introducing Classes, Objects and Methods](#introducing-classes-objects-and-methods)
+* [More Data types and Operators](#more-data-types-and-operators)
 
 ##### Introducing Classes, Objects and Methods
 We have been using classes since the beginning of the course. Everything in java is class based so we didn't really have a choice otherwise. Here we will define a class, understand what it actually means and use some of the powerful features that make a java class useful.
@@ -150,3 +151,53 @@ Notes:
 * Methods declared `public` in a superclass also must be `public` in all subclasses.
 * Methods declared `protected` in a superclass must either be `protected` or `public` in subclasses; they cannot be `private`.
 * Methods declared `private` are not inherited at all, so there is no rule for them.
+
+#### More data types and Operators
+
+##### Arrays
+Declaration syntax
+```java
+// Method 1
+type[] var-name = new type[size];
+
+//Method 2
+type var-name[] = new type[size];
+
+// Method 3
+type[] var-name = {i, j, k, ....};
+```
+Note arrays are implemented as `objects` in Java and hence they must
+be instantiated by the keyword `new`.
+
+##### How to find the length of an array?
+Since arrays are objects they have certain field and methods associated with them, ready to call.
+To find the size of an array you simply:
+
+```java
+int size = arr.length;
+
+```
+Note that this is not a method so the length is not followed by `()` In case of Strings, if we need to find their lengths, we call the length method and hence the `int length = str.length();`
+
+##### What is the point of an array?
+Consider that you want to list all the video-games that you own or all the Facebook friends that you have. You know the precise number but it would be nice to have all the names in one place.
+
+Without the use of arrays you would:
+```java
+String s1 = "Call of Duty";
+String s2 = "Minecraft";
+.
+.
+.// After 2 years of non-stop typing!
+String s1240 = "Batman Origins: Arkham";
+```
+
+With arrays, this is the simple matter of putting the entire array into a `for` loop and then putting values into it one by one.
+```java
+int numOfFriends = 1240;
+String[] myFriends = new String[1240];
+for(int i=0; i<numOfFriends; i++){
+    myFriends[i] = "$NAME of your friend here from console";
+}
+```
+That's it!
