@@ -149,7 +149,7 @@ assignment	| = += -= \*= /= %= &= ^= \|= <<= >>= >>>=
 Do you have permission to eat that ice-cream?
 ```java
 public class Solution{
-    public static void eatIceCream(permission){
+    public static void eatIceCream(String permission){
         if(permission.equals("Yes")){
             System.out.print("Go ahead, hog the tub!");
         }
@@ -167,7 +167,7 @@ public class Solution{
 How about you try that healthy smoothie instead!!
 ```java
 public class Solution{
-    public static void eatIceCream(permission){
+    public static void eatIceCream(String permission){
         if(permission.equals("Yes")){
             System.out.print("Go ahead, hog the tub!");
         }
@@ -187,7 +187,7 @@ public class Solution{
 You can have all the ice-cream you want after you finish your homework.
 ```java
 public class Solution{
-    public static void eatIceCream(permission, homeworkDone){
+    public static void eatIceCream(String permission, boolean homeworkDone){
         if(permission.equals("Yes") && homeworkDone){
             System.out.print("Go ahead, hog the tub!");
         }
@@ -237,8 +237,9 @@ This is a little weird example for the usage of the do-while statement. What we 
 ```java
 public class Solution{
     public static void hammerAway(int nailLength){
+    	Random r = new Random();
         do{
-            nailLength -= Math.random(0, nailLength);
+            nailLength -= r.nextInt(0, nailLength);
             System.out.print(nailLength + " cms of the nail are still poking out!");
         } while(nailLength != 0)
         System.out.print("Nail is fully in the wall now!");
