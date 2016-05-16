@@ -12,8 +12,8 @@
 * Program Control Statements
 
 #### [Day 3](https://github.com/UTDallasCSO/java/blob/master/java_day3.mdown)
-* [Introducing Classes, Objects and Methods]()
-* [More Data Types and Operators]()
+* Introducing Classes, Objects and Methods
+* More Data Types and Operators
 
 #### Day 4
 * [A Closer Look at Methods and Classes]()
