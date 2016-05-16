@@ -1,7 +1,7 @@
 # Java Workshop: Introduction to Programming
 
 ### Contents
-#### [Day 1](https://github.com/UTDallasCSO/content/blob/master/java/java_day1.mdown)
+#### [Day 1](https://github.com/UTDallasCSO/java/blob/master/java_day1.mdown)
 * Installing Java
 * Java Environment
 * Java fundamentals
@@ -11,7 +11,7 @@
 * Introducing variables, primitive data types and Operators
 * Program Control Statements
 
-#### [Day 3](https://github.com/UTDallasCSO/content/blob/master/java/java_day3.mdown)
+#### [Day 3](https://github.com/UTDallasCSO/java/blob/master/java_day3.mdown)
 * [Introducing Classes, Objects and Methods]()
 * [More Data Types and Operators]()
 
