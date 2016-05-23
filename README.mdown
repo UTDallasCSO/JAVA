@@ -16,19 +16,19 @@
 * More Data Types and Operators
 
 #### Day 4
-* [A Closer Look at Methods and Classes]()
-* [Inheritance]()
-* [Packages and Interfaces]()
+* A closer look at Classes and Methods
+* Inheritence
+* Packages and Interfaces
 
 #### Day 5
-* [Exception Handling]()
-* [Using I/O]()
+* Exception Handling
+* Using I/O
 
 #### Day 6
-* [Collections]()
-* [Generics](#generics)
+* Collections
+* Generics
 
 #### Day 7
-* [Multithreaded Programming]()
-* [Debugging]()
-* [What next : J2EE]()
+* Multithreaded programming
+* Debugging
+* What next? J2EE

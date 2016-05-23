@@ -1,5 +1,5 @@
 ### Day 2
-* [Introducing variables, primitive data types and Operators](#introducing-variables-primitive data-types-and-operators)
+* [Introducing variables, primitive data types and Operators](#introducing-variables-primitive-data-types-and-operators)
 * [Program Control Statements](#program-control-statements)
 
 Before starting the session, suggest that students create a dummy class that will house almost all of the codes that we write in class today. There will be a lot of code and writing the class declarations and main methods again and again is a tedious job.
