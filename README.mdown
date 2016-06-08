@@ -17,7 +17,7 @@
 
 #### Day 4
 * A closer look at Classes and Methods
-* Inheritence
+* Inheritance
 * Packages and Interfaces
 
 #### Day 5
@@ -29,6 +29,6 @@
 * Generics
 
 #### Day 7
-* Multithreaded programming
+* Multi-threaded programming
 * Debugging
 * What next? J2EE

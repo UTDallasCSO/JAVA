@@ -1,0 +1,57 @@
+### Day 4
+* [A Closer Look at Classes and Methods](#a-closer-look-at-classes-and-methods)
+* [Inheritance](#inheritance)
+* [Packages and Interfaces](#packages-and-interfaces)
+
+
+
+
+##### Inheritance
+Inheritance is basically the property of one class acquiring the properties of another. The class that inherits is called the child class (base class) and the class that the child inherits from is called as the parent class (super class).
+
+Methods and member variables are what are most commonly inherited.
+
+##### `extends` keyword
+The keyword `extends` is used to inherit the properties of another class.
+
+```java
+class Parent{
+    .
+    .
+    .
+}
+
+class Child extends Parent{
+    .
+    .
+    .
+}
+```
+Sample code:
+
+```java
+class Vehicle{
+    int topSpeed = 100;
+    int doors = 4;
+    boolean engineOn = false;
+    boolean battery = false;
+
+    public void startEngine(){
+        engineOn = true;
+    }
+}
+
+class Tesla extends Vehicle{
+    topSpeed = 200;
+    doors = 2;
+
+    public void electricOnly(boolean gas){
+        if(gas){
+            battery = true;
+        }else{
+            battery = false;
+        }
+        engineOn = false;
+    }
+}
+```
